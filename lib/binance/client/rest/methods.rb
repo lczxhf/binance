@@ -159,6 +159,9 @@ module Binance
                 # #cancel_order!
                 { name: :cancel_order!, client: :signed,
                 action: :delete, endpoint: :order },
+
+                {name: :countdown_cancel_order, client: :signed,
+                action: :post, endpoint: :countdown_cancel_order},
                 # #open_orders
                 { name: :open_orders, client: :signed,
                 action: :get, endpoint: :open_orders },

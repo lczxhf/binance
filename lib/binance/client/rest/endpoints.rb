@@ -58,6 +58,7 @@ module Binance
                 order:               'v1/order',
                 open_orders:         'v1/openOrders',
                 all_orders:          'v1/allOrders',
+                countdown_cancel_order: "v1/countdownCancelAll",
                 account:             'v1/account',
                 user_trades:         'v1/userTrades',
                 test_order:          'v1/order/test',
