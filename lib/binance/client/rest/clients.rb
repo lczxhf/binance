@@ -22,7 +22,7 @@ module Binance
       end
 
       def sub_account_client(api_key,secret_key, adapter)
-        Faraday.new(url: "#{BASE_URL}/api") do |conn|
+        Faraday.new(url: "#{BASE_URL}/spi") do |conn|
           conn.request :json
           conn.response :json, content_type: /\bjson$/
           conn.headers['X-MBX-APIKEY'] = api_key
