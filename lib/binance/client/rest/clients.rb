@@ -21,7 +21,7 @@ module Binance
         end
       end
 
-      def sub_account_client(api_key, adapter)
+      def sub_account_client(api_key,secret_key, adapter)
         Faraday.new(url: "#{BASE_URL}/api") do |conn|
           conn.request :json
           conn.response :json, content_type: /\bjson$/
