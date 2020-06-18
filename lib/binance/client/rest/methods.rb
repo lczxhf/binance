@@ -197,9 +197,12 @@ module Binance
                 # # listenKey
                 { name: :listenKey, client: :signed,
                 action: :post, endpoint: :listenKey },
-				# # listenKey
+				        # # listenKey
                 { name: :getlistenKey, client: :signed,
                 action: :get, endpoint: :listenKey },
+                # # listenKey
+                { name: :updatelistenKey, client: :signed,
+                action: :put, endpoint: :listenKey },
                 # # position_risk
                 { name: :position_risk, client: :signed,
                 action: :get, endpoint: :position_risk },
