@@ -73,6 +73,14 @@ module Binance
                 end
             end
 
+            def data_client(adapter)
+              Faraday.new(url: "#{BASE_URL}futures/data") do |conn|
+                conn.request :json
+                conn.response :json, content_type: /\bjson$/
+                conn.adapter adapter
+              end
+            end
+
             def verified_client(api_key, adapter)
                 Faraday.new(url: "#{BASE_URL}/fapi") do |conn|
                     conn.response :json, content_type: /\bjson$/

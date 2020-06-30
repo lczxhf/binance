@@ -47,6 +47,7 @@ module Binance
                      adapter: Faraday.default_adapter)
         @clients = {}
         @clients[:public]   = public_client adapter
+        @clients[:data]   = data_client adapter
         @clients[:verified] = verified_client api_key, adapter
         @clients[:signed]   = signed_client api_key, secret_key, adapter
         @clients[:withdraw] = withdraw_client api_key, secret_key, adapter

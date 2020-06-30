@@ -246,15 +246,15 @@ module Binance
                   action: :get, endpoint: :force_orders },
                 { name: :open_interest, client: :public,
                   action: :get, endpoint: :open_interest },
-                { name: :open_interest_hist, client: :public,
+                { name: :open_interest_hist, client: :data,
                   action: :get, endpoint: :open_interest_hist },
-                { name: :long_short_account_ratio, client: :public,
+                { name: :long_short_account_ratio, client: :data,
                   action: :get, endpoint: :long_short_account_ratio },
-                { name: :long_short_position_ratio, client: :public,
+                { name: :long_short_position_ratio, client: :data,
                   action: :get, endpoint: :long_short_position_ratio },
-                { name: :long_short_user_ratio, client: :public,
+                { name: :long_short_user_ratio, client: :data,
                   action: :get, endpoint: :long_short_user_ratio },
-                { name: :long_short_taker_ratio, client: :public,
+                { name: :long_short_taker_ratio, client: :data,
                   action: :get, endpoint: :long_short_taker_ratio }
             ].freeze
 
