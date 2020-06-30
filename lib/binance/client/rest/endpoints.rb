@@ -86,11 +86,11 @@ module Binance
 
                 force_orders: 'v1/allForceOrders',
                 open_interest: 'v1/openInterest',
-                open_interest_hist: 'v1/openInterestHist',
-                long_short_account_ratio: 'v1/topLongShortAccountRatio',
-                long_short_position_ratio: 'v1/topLongShortPositionRatio',
-                long_short_user_ratio: 'v1/globalLongShortAccountRatio',
-                long_short_taker_ratio: 'v1/takerlongshortRatio'
+                open_interest_hist: 'openInterestHist',
+                long_short_account_ratio: 'topLongShortAccountRatio',
+                long_short_position_ratio: 'topLongShortPositionRatio',
+                long_short_user_ratio: 'globalLongShortAccountRatio',
+                long_short_taker_ratio: 'takerlongshortRatio'
             }.freeze
         end
 
