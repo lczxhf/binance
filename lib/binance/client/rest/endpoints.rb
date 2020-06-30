@@ -82,7 +82,15 @@ module Binance
                 account_status:      'v1/accountStatus.html',
                 system_status:       'v1/systemStatus.html',
                 withdraw_fee:        'v1/withdrawFee.html',
-                dust_log:            'v1/userAssetDribbletLog.html'
+                dust_log:            'v1/userAssetDribbletLog.html',
+
+                force_orders: 'v1/allForceOrders',
+                open_interest: 'v1/openInterest',
+                open_interest_hist: 'v1/openInterestHist',
+                long_short_account_ratio: 'v1/topLongShortAccountRatio',
+                long_short_position_ratio: 'v1/topLongShortPositionRatio',
+                long_short_user_ratio: 'v1/globalLongShortAccountRatio',
+                long_short_taker_ratio: 'v1/takerlongshortRatio'
             }.freeze
         end
 

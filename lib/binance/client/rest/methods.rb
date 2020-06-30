@@ -240,7 +240,22 @@ module Binance
                 action: :get, endpoint: :withdraw_fee },
                 # dust_log
                 { name: :dust_log, client: :withdraw,
-                action: :get, endpoint: :dust_log }
+                action: :get, endpoint: :dust_log },
+
+                { name: :force_orders, client: :public,
+                  action: :get, endpoint: :force_orders },
+                { name: :open_interest, client: :public,
+                  action: :get, endpoint: :open_interest },
+                { name: :open_interest_hist, client: :public,
+                  action: :get, endpoint: :open_interest_hist },
+                { name: :long_short_account_ratio, client: :public,
+                  action: :get, endpoint: :long_short_account_ratio },
+                { name: :long_short_position_ratio, client: :public,
+                  action: :get, endpoint: :long_short_position_ratio },
+                { name: :long_short_user_ratio, client: :public,
+                  action: :get, endpoint: :long_short_user_ratio },
+                { name: :long_short_taker_ratio, client: :public,
+                  action: :get, endpoint: :long_short_taker_ratio }
             ].freeze
 
         end
