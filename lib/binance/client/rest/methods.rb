@@ -193,7 +193,7 @@ module Binance
                 action: :get, endpoint: :income },
                 # # leverage
                 { name: :leverage, client: :signed,
-                action: :get, endpoint: :leverage },
+                action: :post, endpoint: :leverage },
                 # # listenKey
                 { name: :listenKey, client: :signed,
                 action: :post, endpoint: :listenKey },
