@@ -22,7 +22,7 @@ module Binance
                 all_orders:       'v3/allOrders',
                 account:          'v3/account',
                 my_trades:        'v3/myTrades',
-                user_data_stream: 'v1/userDataStream',
+                user_data_stream: 'v3/userDataStream',
 
                 # Withdraw API Endpoints
                 balance:          'v1/balance',
