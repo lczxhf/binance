@@ -92,7 +92,11 @@ module Binance
       def kline(symbol:, interval:, methods:)
         single stream: { symbol: symbol, type: 'kline', interval: interval },
                methods: methods
-      end
+			end
+
+			def all_mark_price(methods:)
+				single stream: { symbol: '!markPrice', type: 'arr' }, methods: methods
+			end
 
       # Public: Create a Ticker stream
       #
@@ -305,6 +309,9 @@ module Binance
 				methods: methods
 			end
 
+			def all_mark_price(methods:)
+				single stream: { symbol: '!markPrice', type: 'arr' }, methods: methods
+			end
 			# Public: Create a Ticker stream
 			#
 			# :symbol - The String symbol the stream will listen to
