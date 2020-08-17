@@ -73,6 +73,9 @@ module Binance
                 listenKey:           'v1/listenKey',
                 position_risk:       'v1/positionRisk',
                 premium_index:       'v1/premiumIndex',
+                leverage_bracket:    'v1/leverageBracket',
+                margin_type:         'v1/marginType',
+                position_margin:      'v1/positionMargin',
 
                 #not found in Future-API yet
                 my_trades:           'v1/myTrades',

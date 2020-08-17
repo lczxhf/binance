@@ -216,6 +216,15 @@ module Binance
                 { name: :balance, client: :signed,
                 action: :get, endpoint: :balance },
 
+                { name: :leverage_bracket, client: :signed,
+                  action: :get, endpoint: :leverage_bracket },
+
+                { name: :margin_type, client: :signed,
+                  action: :post, endpoint: :margin_type },
+
+                { name: :position_margin, client: :signed,
+                  action: :post, endpoint: :position_margin },
+
                 # NOT FOUND IN FUTURE API (yet)
                 # #my_trades
                 { name: :my_trades, client: :signed,
