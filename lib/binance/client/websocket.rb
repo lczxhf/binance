@@ -220,7 +220,7 @@ module Binance
 
 		class WebSocketFuture
 			# Public: String base url for WebSocket client to use
-			BASE_URL = 'wss://fstream.binance.com'.freeze
+			BASE_URL = 'wss://fstream3.binance.com'.freeze
 
 			# Public: Create a single WebSocket stream
 			#
