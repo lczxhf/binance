@@ -76,6 +76,7 @@ module Binance
                 leverage_bracket:    'v1/leverageBracket',
                 margin_type:         'v1/marginType',
                 position_margin:      'v1/positionMargin',
+                position_side:         "v1/positionSide/dual",
 
                 #not found in Future-API yet
                 my_trades:           'v1/myTrades',

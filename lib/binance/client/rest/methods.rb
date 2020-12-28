@@ -225,6 +225,9 @@ module Binance
                 { name: :position_margin, client: :signed,
                   action: :post, endpoint: :position_margin },
 
+                { name: :position_side, client: :signed,
+                  action: :post, endpoint: :position_side },
+
                 # NOT FOUND IN FUTURE API (yet)
                 # #my_trades
                 { name: :my_trades, client: :signed,
