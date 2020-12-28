@@ -226,6 +226,9 @@ module Binance
                   action: :post, endpoint: :position_margin },
 
                 { name: :position_side, client: :signed,
+                  action: :get, endpoint: :position_side },
+
+                { name: :change_position_side, client: :signed,
                   action: :post, endpoint: :position_side },
 
                 # NOT FOUND IN FUTURE API (yet)
