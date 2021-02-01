@@ -65,6 +65,7 @@ module Binance
                 user_data_stream:    'v1/userDataStream',
                 withdraw:            'v1/withdraw.html',
 
+
                 # Withdraw API Endpoints
                 balance:             'v1/balance',
                 funding_rate:        'v1/fundingRate',
@@ -77,6 +78,7 @@ module Binance
                 margin_type:         'v1/marginType',
                 position_margin:      'v1/positionMargin',
                 position_side:         "v1/positionSide/dual",
+                asset_dust:            "v1/asset/dust ",
 
                 #not found in Future-API yet
                 my_trades:           'v1/myTrades',

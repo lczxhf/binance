@@ -102,7 +102,9 @@ module Binance
                 action: :get, endpoint: :dust_log },
 
                 { name: :transfer, client: :sub_account,
-                action: :post, endpoint: :transfer}
+                action: :post, endpoint: :transfer},
+                { name: :asset_dust, client: :sub_account,
+                  action: :post, endpoint: :asset_dust},
             ].freeze
         end
 
