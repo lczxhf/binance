@@ -28,6 +28,9 @@ module Binance
                 # #klines
                 { name: :klines, client: :public,
                 action: :get, endpoint: :klines },
+
+                { name: :continuous_klines, client: :public,
+                action: :get, endpoint: :continuous_klines },
                 # #twenty_four_hour
                 { name: :twenty_four_hour, client: :public,
                 action: :get, endpoint: :twenty_four_hour },
@@ -135,6 +138,8 @@ module Binance
                 # #klines
                 { name: :klines, client: :public,
                 action: :get, endpoint: :klines },
+                { name: :continuous_klines, client: :public,
+                  action: :get, endpoint: :continuous_klines },
                 # #twenty_four_hour
                 { name: :twenty_four_hour, client: :public,
                 action: :get, endpoint: :twenty_four_hour },
