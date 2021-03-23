@@ -36,7 +36,8 @@ module Binance
                 withdraw_fee:     'v3/withdrawFee.html',
                 dust_log:         'v3/userAssetDribbletLog.html',
 
-                transfer:         'v1/futures/transfer'
+                transfer:         'v1/futures/transfer',
+                asset_transfer:   '/sapi/v1/asset/transfer'
             }.freeze
         end
 
